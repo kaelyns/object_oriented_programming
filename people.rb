@@ -1,7 +1,10 @@
 # Exercise 1: Class Time
-class Person
+class Person # Parent class
     attr_accessor :name
 
+    def greeting
+        "Hi, my name is #{@name}"
+    end
 end
 
 
@@ -15,12 +18,18 @@ class Instructor < Person
     def teach
         puts "Everything in Ruby is an Object"
     end
-
 end
 
 
 kaelyn = Student.new
-mina = Instructor.new
+kaelyn.name = "Kaelyn"
 
+mina = Instructor.new
+mina.name = "Mina"
+
+
+puts kaelyn.greeting
 puts kaelyn.learn
+
+puts mina.greeting
 puts mina.teach
