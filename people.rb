@@ -32,3 +32,6 @@ puts chris.teach
 
 puts cristina.greeting
 puts cristina.learn
+
+# teach method on a student instance creates an error
+# because the instance hasnt been created yet
