@@ -3,7 +3,7 @@ class Person # Parent class
     attr_accessor :name
 
     def greeting
-        "Hi, my name is #{@name}"
+        "Hi, my name is #{name}"
     end
 end
 
