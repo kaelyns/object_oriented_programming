@@ -1,9 +1,9 @@
 # Mars Rover
 class Rovers
     attr_accessor :x, :y, :dir, :control
-    # def plateau_size
-    #     input2 = gets.strip.split("")
-    # end
+    def plateau_size
+        input2 = gets.strip.split("")
+    end
 
     def read_instruction
         input2 = gets.strip.split("")
@@ -49,16 +49,21 @@ class Rovers
                 input3.delete_at(0)
             end
         end
-        puts "#{x} #{y} #{dir}"
-        return
+        # puts "#{x} #{y} #{dir}"
+        return "#{x} #{y} #{dir}"
     end
 
 end
 
-# plateau = Rovers.new
+plateau = Rovers.new
 rover1 = Rovers.new
 rover2 = Rovers.new
 
-# plateau.plateau_size
-rover1.read_instruction
-rover2.read_instruction
+puts "Input: "
+plateau.plateau_size
+x = rover1.read_instruction
+y = rover2.read_instruction
+
+puts "Output: "
+puts x
+puts y
